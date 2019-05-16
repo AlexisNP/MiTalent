@@ -1,0 +1,1414 @@
+/* === CSS HEADER === */
+*{margin:0;padding:0;box-sizing:border-box}
+a{text-decoration:none;color:inherit}
+*:focus{outline:none}
+ul{list-style-type: none;}
+body{font-size: 100%;}
+button{outline: none !important;}
+
+/* =============== GLOBAL HEADER CODE =============== */
+header.about .site-nav,
+header.contact .site-nav{position: absolute}
+header.global,
+div.form-container{
+  position: fixed;
+  margin: 3rem 2.5rem;
+  z-index: 500;
+}
+  div.form-container{right: 0}
+
+ul.social-links{
+  margin-top: 4rem;
+}
+ul.social-links li{
+  padding: 10px 0;
+}
+  ul.social-links a{
+    padding: 5px 0;
+    font-size: 0.9em;
+    color: #859D9D;
+    transition: all 0.2s ease-in-out;
+  }
+    ul.social-links a:hover{
+      color: #000;
+    }
+#burger-menu-toggle,
+#search-bar-toggle{
+  cursor: pointer;
+}
+
+nav.site-nav{
+  width: 50%;
+  padding: 3rem 0 3rem 6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+  font-size: 0.8em;
+  z-index: 500;
+}
+nav.site-nav ul{
+  display: flex;
+}
+nav.site-nav li{
+  padding: 0 10px;
+}
+  nav.site-nav li a{
+    padding: 0 5px;
+    line-height: 31px;
+    color: #000;
+    border-bottom: 1px solid transparent;
+  }
+    nav.site-nav li a:hover{
+      color: #000;
+      border-bottom: 1px solid #000;
+      transition: all 0.15s ease-in-out;
+      text-decoration: none;
+    }
+#logo img{
+  display: block;
+  width: 150px;
+  transition: all 0.3s ease-in-out;
+}
+  #logo img:hover{
+    transition: all 0.3s ease-in-out;
+  }
+  #logo{
+    width: 165px;
+    padding: 10px;
+    z-index: 501;
+  }
+
+/* =============== GLOBAL FOOTER CODE =============== */
+
+footer.global{
+  padding: 4rem 2.5rem 2rem;
+}
+footer.global div:nth-child(1){
+  display: flex;
+  justify-content: space-between;
+}
+footer.global div:nth-child(1) aside{
+  display: flex;
+  align-items: center;
+}
+footer.global div:nth-child(1) aside a{
+  display: block;
+  position: relative;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+  font-size: 0.8em;
+  color: #333;
+  text-decoration: none;
+  letter-spacing: 2px;
+  border: 1px solid transparent;
+  transition: 0.3s ease-in-out;
+}
+  footer.global div:nth-child(1) aside a:before{
+    position: absolute;
+    left: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+    content: "";
+    display: block;
+    height: 30px;
+    width: 1px;
+    background: rgba(0,0,0,.1);
+  }
+  footer.global div:nth-child(1) aside a:hover{
+    color: #000;
+    border-bottom: 1px solid #000;
+    transition: 0.3s ease-in-out;
+  }
+  footer.global div:nth-child(1) aside svg{
+    margin-left: 10px;
+  }
+
+footer.global hr{
+  margin-top: 2rem !important;
+  margin-bottom: 2rem !important;
+}
+
+footer.global div:nth-child(3){
+  display: flex;
+  justify-content: space-between;
+}
+footer.global div:nth-child(3) small{
+  font-family: 'Nunito', sans-serif;
+  font-weight: 500;
+  font-size: 0.7em;
+  color: #555;
+}
+footer.global div:nth-child(3) ul{
+  display: flex;
+}
+  footer.global div:nth-child(3) li{
+    margin: 0 5px;
+  }
+  footer.global div:nth-child(3) li a{
+    padding: 0 8px;
+    color: #859D9D;
+    transition: 0.3s ease-in-out;
+  }
+    footer.global div:nth-child(3) li a:hover{
+      color: #000;
+      transition: 0.3s ease-in-out;
+    }
+
+/* ============================ FRONT PAGE CODE ============================ */
+/* =============== LANDING SECTION =============== */
+
+section.landing-gallery{
+  height: 32rem;
+  margin-bottom: 5rem;
+  padding: 0 0 0 5rem;
+  display: flex;
+}
+section.landing-gallery:after{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30rem;
+  height: 24rem;
+  display: block;
+  background: #c3dbdb;
+  content: "";
+  z-index: -1;
+}
+section.landing-gallery > button{
+  align-self: flex-end;
+}
+section.landing-gallery figure button{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+section.landing-gallery figure{
+  margin: 0 !important;
+  position: relative;
+  width: 60vw;
+  display: flex;
+  align-items: center;
+  background: url('../img/gallery-woman-model.jpg') no-repeat center center;
+  background-size: cover;
+}
+section.landing-gallery figcaption{
+  transform: translateX(-80px);
+}
+section.landing-gallery h1{
+  position: relative;
+  font-family: 'Poppins', sans-serif;
+  font-size: 5em;
+}
+section.landing-gallery h1:after{
+  position: absolute;
+  bottom: 20px;
+  right: 0;
+  width: 50px;
+  height: 5px;
+  display: block;
+  content: "";
+  background: #FFF;
+}
+section.landing-gallery p{
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+  font-size: 0.85em;
+  color: #444;
+}
+
+section.landing-gallery .gallery-triggers{
+  padding: 4rem 3rem 2rem;
+  align-self: flex-end;
+}
+section.landing-gallery .gallery-triggers li{
+  margin-top: 1.25rem;
+}
+section.landing-gallery .gallery-triggers li a{
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+  font-size: 0.8em;
+  color: #555;
+}
+section.landing-gallery .gallery-triggers li a:hover{
+  color: #000;
+  text-decoration: none;
+}
+
+/* =============== PROFILE SLIDER SECTION =============== */
+section.profile{
+  padding: 0 5rem;
+}
+section.profile figure{
+  margin: 0 !important;
+}
+section.profile header,
+section.about-slider header{
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+}
+section.profile header button,
+section.about-slider header button{
+  margin: 0 20px;
+  background: none;
+  border: none;
+  border-bottom: 1px solid transparent;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+section.profile header button h2,
+section.about-slider header button h2{
+  padding-bottom: 0.25rem;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+  font-size: 0.8em;
+  color: #555;
+  transition: all 0.3s ease-in-out;
+}
+  section.profile header button:focus,
+  section.about-slider header button:focus{
+    border-bottom: 1px solid #000;
+    transition: all 0.3s ease-in-out;
+  }
+  section.profile header button:focus h2,
+  section.about-slider header button:focus h2{
+    color: #000;
+    transition: all 0.3s ease-in-out;
+  }
+
+section.profile .profile-container{
+  height: 36rem;
+  width: 100%;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: auto;
+  align-items: start;
+}
+section.profile .profile-container .item{
+  height: 18rem;
+}
+
+/* DISPLAYS PEOPLE'S PROFILE PHOTOS */
+section.profile figure.item:nth-child(1){background-image: url('../img/profile-gallery-man-model-4.jpg');}
+section.profile figure.item:nth-child(2){background-image: url('../img/profile-gallery-woman-model-1.jpg');}
+section.profile figure.item:nth-child(3){background-image: url('../img/profile-gallery-woman-model-5.jpg');}
+section.profile figure.item:nth-child(4){background-image: url('../img/profile-gallery-man-model-3.jpg');}
+section.profile figure.item:nth-child(5){background-image: url('../img/profile-gallery-man-model-2.jpg');}
+section.profile figure.item:nth-child(6){background-image: url('../img/profile-gallery-woman-model-2.jpg');}
+section.profile figure.item:nth-child(7){background-image: url('../img/profile-gallery-man-model-5.jpg');}
+section.profile figure.item:nth-child(8){background-image: url('../img/profile-gallery-man-model-1.jpg');}
+section.profile figure.item:nth-child(9){background-image: url('../img/profile-gallery-woman-model-4.jpg');}
+section.profile figure.item:nth-child(10){background-image: url('../img/profile-gallery-woman-model-3.jpg');}
+
+/* "EXPLORE MORE" BUTTON BELOW THE GRID */
+section.profile .flex-container{
+  margin: 25px 0;
+  display: flex;
+  justify-content: center;
+}
+  section.profile .flex-container a{
+    padding: 10px 25px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    font-size: 0.8em;
+    color: #FFF;
+    background: #b4d3d3;
+    border-radius: 50px;
+    transition: background 0.2s ease-in-out;
+  }
+    section.profile .flex-container a:hover{
+      background: #87B0B0;
+      text-decoration: none;
+      transition: background 0.2s ease-in-out;
+    }
+
+/* =============== NEWS SECTION =============== */
+section.news{padding: 2rem 5rem 10px;}
+
+section.news > h2{
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.5em;
+  font-weight: normal;
+}
+section.news > h2:after{
+  display: block;
+  margin: 15px auto;
+  height: 1px;
+  width: 10%;
+  background: #000;
+  content: "";
+}
+section.news header{
+  padding: 2rem 0;
+  display: flex;
+}
+section.news header a{
+  width: 33%;
+  color: #87B0B0;
+  text-decoration: none;
+}
+section.news header a:hover h3{
+  color: #111;
+  transition: 0.15s ease-in-out;
+}
+section.news header article{
+  display: flex;
+}
+section.news header article div{
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+}
+section.news header article h3{
+  font-size: 1.25em;
+  transition: 0.15s ease-in-out;
+}
+section.news header article time{
+  font-size: 0.95em;
+  color: #333;
+}
+section.news header figure{
+  width: 11rem;
+  height: 6rem;
+  margin: 0 1rem 0 0;
+  display: inline-block;
+  background-size: cover;
+}
+section.news header a:nth-child(1) figure{background-image: url('../img/news-article-1.jpg');}
+section.news header a:nth-child(2) figure{background-image: url('../img/news-article-2.jpg');}
+section.news header a:nth-child(3) figure{background-image: url('../img/news-article-3.jpg');}
+
+
+section.news main{
+  height: 50rem;
+  display: grid;
+  grid-template-columns: 33% 33% 100fr;
+  grid-template-rows: 50% 100fr;
+  grid-gap: 25px;
+}
+section.news main a{
+  text-decoration: none;
+  color: inherit;
+}
+section.news main a:nth-child(n+2):hover h3{
+  color: #000;
+  transition: 0.15s ease-in-out;
+}
+
+section.news main a:nth-child(1){
+  grid-column: span 2;
+  grid-row: 1;
+}
+section.news main a:nth-child(1) article{
+  display: flex;
+  height: 100%;
+}
+section.news main a:nth-child(1) article aside{
+  width: 40%;
+  padding: 5rem 3rem 0;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  color: #FFF;
+  background: #cde0e0;
+  transition: 0.3s ease-in-out;
+}
+section.news main a:nth-child(1):hover article aside{
+  background: #ABC9C9;
+  transition: 0.3s ease-in-out;
+}
+  section.news main a:nth-child(1) article aside button{
+    margin-bottom: 25px;
+    border: none;
+    filter: invert(100%);
+    background: none;
+    cursor: pointer;
+  }
+section.news main a:nth-child(1) article figure{
+  position: relative;
+  width: 60%;
+  margin: 0;
+  background: url('../img/news-1.jpeg');
+  background-size: cover;
+}
+section.news main a:nth-child(1) article h3{
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5em;
+  font-weight: normal;
+}
+
+section.news main a:nth-child(2){
+  grid-row: span 2;
+}
+section.news main a:nth-child(2) article{
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+}
+section.news main a:nth-child(2) article figure{
+  height: 85%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  background: url('../img/news-2.jpeg');
+  background-size: cover;
+}
+section.news main a:nth-child(n+2) h3{
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5em;
+  font-weight: normal;
+  color: #509D9D;
+  transition: 0.15s ease-in-out;
+}
+
+section.news main a:nth-child(3) article{
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+}
+section.news main a:nth-child(3) article figure{
+  height: 80%;
+  background: url('../img/news-3.jpeg');
+  background-size: cover;
+}
+
+section.news main a:nth-child(4) article{
+  height: 100%;
+}
+section.news main a:nth-child(4) figure{
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+section.news main a:nth-child(4) figure figcaption{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: url('../img/news-4.jpeg');
+  background-size: cover;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+section.news main a:nth-child(4) figure:hover figcaption,
+section.news main a:nth-child(4) figure:focus figcaption{
+  transform: scale(1.05);
+  filter: brightness(0.5);
+  transition: 0.3s ease-in-out;
+}
+
+/* ============================ ABOUT PAGE ============================ */
+/* =============== LANDING SECTION =============== */
+section.landing-about{
+  position: relative;
+  height: 97vh;
+  margin-bottom: 5rem;
+  display: flex;
+}
+section.landing-about figure{
+  position: relative;
+  min-width: 35%;
+  margin-bottom: 0 !important;
+  background: #ebeeee;
+}
+  section.landing-about figure .btn-wrapper{
+    position: absolute;
+    bottom: 0;
+  }
+  section.landing-about figure .btn-wrapper .cyan-btn{
+    padding: 2rem 5rem !important;
+  }
+section.landing-about aside{
+  padding: 3rem 20% 0 6rem;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+}
+  section.landing-about aside h2{
+    margin-top: 3rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5em;
+    font-weight: normal;
+  }
+    section.landing-about aside h2::first-letter{
+      float: left;
+      margin: -5px 5px 0 0;
+      font-size: 2.5em;
+    }
+  section.landing-about aside p{
+    margin-bottom: 0 !important;
+    font-family: 'Nunito', sans-serif;
+    color: #888;
+    line-height: 1.85em;
+  }
+  section.landing-about aside p:first-child{
+    margin-top: 1.5rem;
+  }
+  section.landing-about aside .motivation{
+    padding: 3.5rem 8rem;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5em;
+    color: #FFF;
+    background: #000;
+  }
+  section.landing-about:after{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 10rem;
+    height: 50%;
+    background: #c8dede;
+    content: "";
+  }
+
+/* =============== SLIDER SECTION =============== */
+section.about-slider figure.item:nth-child(1){background-image: url('../img/profile-gallery-man-model-4.jpg');}
+section.about-slider figure.item:nth-child(2){background-image: url('../img/profile-gallery-woman-model-1.jpg');}
+section.about-slider figure.item:nth-child(3){background-image: url('../img/profile-gallery-woman-model-5.jpg');}
+section.about-slider figure.item:nth-child(4){background-image: url('../img/profile-gallery-man-model-3.jpg');}
+
+/* ============================ CONTACT PAGE CODE ============================ */
+
+section.landing-contact{
+  position: relative;
+  height: 97vh;
+  margin-bottom: 5rem;
+  display: flex;
+}
+section.landing-contact figure{
+  padding: 10rem 0 0 6rem;
+  position: relative;
+  min-width: 35%;
+  margin-bottom: 0 !important;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-end;
+  background: #1a1a1d;
+}
+  section.landing-contact figcaption{
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+  }
+  section.landing-contact figure h1{
+    font-size: 4.5em;
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
+    color: #FFF;
+  }
+  section.landing-contact figure h3{
+    margin-top: 1.5rem;
+    font-size: 0.9em;
+    font-family: 'Nunito', sans-serif;
+    font-weight: normal;
+    letter-spacing: 0.2em;
+    color: #FFF;
+  }
+  section.landing-contact figure .btn-wrapper{
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  section.landing-contact figure .btn-wrapper .cyan-btn{
+    padding: 2rem 5rem !important;
+  }
+section.landing-contact aside{
+  padding: 3rem 20% 0 6rem;
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+}
+  section.landing-contact aside h2{
+    margin-top: 5rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5em;
+    font-weight: normal;
+  }
+    section.landing-contact aside h2::first-letter{
+      float: left;
+      margin: -5px 5px 0 0;
+      font-size: 2.5em;
+    }
+    section.landing-contact aside ul{
+      margin: 2.5rem 0 0 30px;
+      display: flex;
+      flex-flow: row wrap;
+    }
+    section.landing-contact aside li{
+      position: relative;
+      margin-top: 2.5rem;
+      width: 50%;
+    }
+    section.landing-contact aside li:before{
+      content: '';
+      display: block;
+      position: absolute;
+      left: -30px;
+      width: 25px;
+      height: 25px;
+      background-size: 25px 25px;
+    }
+    section.landing-contact aside li:nth-child(1):before{background-image: url(../img/house-icon.svg)}
+    section.landing-contact aside li:nth-child(2):before{background-image: url(../img/phone-icon.svg)}
+    section.landing-contact aside li:nth-child(3):before{background-image: url(../img/letter-icon.svg)}
+      section.landing-contact aside li p{
+        font-size: 0.85em;
+        font-family: 'Nunito', sans-serif;
+        color: #555;
+      }
+  section.landing-contact:after{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    width: 10rem;
+    height: 50%;
+    background: #c8dede;
+    content: "";
+  }
+
+/* ============================ NEWS PAGE CODE ============================ */
+main.news{
+  display: flex;
+  flex-flow: row nowrap;
+}
+main.news > figure{
+  position: sticky;
+  top: 0;
+  margin-bottom: 0 !important;
+  padding: 0 0 0 4rem;
+  height: 97vh;
+  width: 35%;
+  color: #FFF;
+  background: #e2e8e8;
+  background: -moz-linear-gradient(top, #e2e8e8 0%, #e3eaed 31%, #56575a 100%);
+  background: -webkit-linear-gradient(top, #e2e8e8 0%,#e3eaed 31%,#56575a 100%);
+  background: linear-gradient(to bottom, #e2e8e8 0%,#e3eaed 31%,#56575a 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e8e8', endColorstr='#56575a',GradientType=0 );
+}
+main.news > figure figcaption{
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-end;
+}
+main.news > figure header{
+  padding: 0 0 2rem;
+}
+  main.news > figure header p{
+    font-size: 0.8em;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    letter-spacing: 0.2em;
+  }
+  main.news > figure header h1{
+    position: relative;
+    font-size: 2em;
+    font-family: 'Nunito', sans-serif;
+  }
+  main.news > figure header h1:after{
+    position: absolute;
+    display: block;
+    top: 0.5em;
+    right: 0;
+    width: 15%;
+    height: 3px;
+    background: #FFF;
+    content: '';
+  }
+main.news > figure footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+  main.news > figure footer .slider-arrows a{
+    margin: 0 50px 0 0;
+    padding: 0 15px 0 0;
+    color: #AAA;
+    transition: 0.15s ease-in-out;
+  }
+  main.news > figure footer .slider-arrows a:hover{
+    color: #FFF;
+    transition: 0.15s ease-in-out;
+  }
+
+section.posts{
+  max-width: 65%;
+  flex-grow: 1;
+}
+  section.posts header{
+    padding: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+    section.posts header input{
+      margin-right: 8rem;
+      padding: 2px 20px;
+      font-size: 0.75em;
+      font-family: 'Nunito', sans-serif;
+      font-weight: bold;
+      letter-spacing: 0.15em;
+      color: #555;
+      border: none;
+      border-left: 1px solid #AAA;
+    }
+    section.posts header form a{
+      margin-left: 2rem;
+      color: #555;
+      transition: 0.15s ease-in-out;
+    }
+    section.posts header form a:hover{
+      color: #000;
+      transition: 0.15s ease-in-out;
+    }
+
+section.posts .posts-container{
+  padding: 0 6rem 0 3rem;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: repeat(14, 8rem);
+  column-gap: 2rem;
+  row-gap: 1rem;
+}
+section.posts .posts-container a.post{
+  display: block;
+}
+section.posts .posts-container a{
+  color: #444;
+}
+section.posts .posts-container a.post:hover,
+section.posts .posts-container .post:hover a{
+  color: #000;
+}
+  section.posts .posts-container .post h3{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.3em;
+  }
+  section.posts .posts-container .post time{
+    font-size: 0.85em;
+    font-family: 'Nunito', sans-serif;
+  }
+
+section.posts .posts-container .post:nth-child(1){
+  grid-column: 1;
+  grid-row: span 4;
+}
+  section.posts .posts-container .post:nth-child(1) figure{
+    height: 80%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    background: #e2e8e8;
+    background-size: cover;
+  }
+
+section.posts .posts-container .post:nth-child(n+2):nth-child(-n+5){
+  grid-column: 2;
+  grid-row: span 1;
+  display: flex;
+  flex-flow: column wrap;
+}
+  section.posts .posts-container .post:nth-child(n+2):nth-child(-n+5) figure{
+    height: 100%;
+    width: 9.5rem;
+    background: #e2e8e8;
+  }
+  section.posts .posts-container .post:nth-child(n+2):nth-child(-n+5) figcaption{width: 50%;}
+
+section.posts .posts-container .post:nth-child(6){
+  grid-column: span 2;
+  grid-row: span 4;
+  position: relative;
+}
+  section.posts .posts-container .post:nth-child(6) figure{
+    width: 100%;
+    height: 80%;
+    background: #e2e8e8;
+  }
+section.posts .posts-container .post:nth-child(n+7):nth-child(-n+10){
+  grid-row: span 3;
+}
+section.posts .posts-container .post:nth-child(n+7):nth-child(-n+10) figure{
+  height: 75%;
+  background: #e2e8e8;
+}
+section.posts .post-citation{
+  padding: 3rem 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5em;
+  text-align: center;
+  color: #FFF;
+  background: #000;
+}
+section.posts footer{
+  padding: 2rem 3rem;
+  display: flex;
+  justify-content: space-between;
+    font-size: 0.8em;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    letter-spacing: 0.15em;
+}
+section.posts footer a{color: #222;}
+section.posts footer a:hover{text-decoration: none;}
+section.posts footer a.inactive{color: #AAA;}
+section.posts footer a.inactive:hover{cursor: default;}
+
+section.posts footer a svg{
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+}
+section.posts footer a.active:hover svg{
+  opacity: 1;
+  transform: translateX(0);
+  transition: all 0.2s ease-in-out;
+}
+section.posts footer a.active:first-child:hover svg{transform: translateX(-5px);}
+section.posts footer a.active:last-child:hover svg{transform: translateX(5px);}
+
+/* SLIDER SECTION */
+section.news-slider figure.item:nth-child(1){background-image: url('../img/profile-gallery-woman-model-5.jpg');}
+section.news-slider figure.item:nth-child(2){background-image: url('../img/profile-gallery-man-model-4.jpg');}
+section.news-slider figure.item:nth-child(3){background-image: url('../img/profile-gallery-man-model-3.jpg');}
+section.news-slider figure.item:nth-child(4){background-image: url('../img/profile-gallery-woman-model-1.jpg');}
+
+/* OUR CLIENTS */
+section.our-clients{
+  margin-bottom: 3rem;
+}
+  section.our-clients header{
+    margin-top: 1.5rem;
+    padding: 5rem 12rem 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+    section.our-clients header h2{
+      padding: 0 0 1rem 0;
+      position: relative;
+      font-family: 'Poppins', sans-serif;
+      font-size: 3em;
+      font-weight: normal;
+    }
+      section.our-clients header h2:after{
+        position: absolute;
+        bottom: 0;
+        display: block;
+        width: 50px;
+        height: 2px;
+        content: '';
+        background: #444;
+      }
+    section.our-clients header div{
+      width: 50%;
+      font-size: 0.8em;
+      font-family: 'Nunito', sans-serif;
+    }
+      section.our-clients header a{
+        font-family: 'Nunito', sans-serif;
+        font-weight: bold;
+        letter-spacing: 0.2em;
+        color: #555;
+      }
+        section.our-clients header a:hover{
+          color: #000;
+          text-decoration: none;
+        }
+
+/* ============================ CLIENTS PAGE CODE ============================ */
+/* =============== LANDING SECTION =============== */
+section.landing-clients{
+  display: flex;
+}
+
+section.landing-clients > *{
+  width: 50%;
+}
+section.landing-clients > div{
+  display: flex;
+}
+section.landing-clients > div:first-child{
+  padding: 8.5rem 0 10rem;
+  justify-content: flex-end;
+  background: #e2eded;
+}
+section.landing-clients > div:first-child div{
+  height: 22rem;
+  padding: 5rem 7rem 5rem 5rem;
+  background: #FFF;
+}
+section.landing-clients h1{
+  font-family: 'Poppins', sans-serif;
+  font-size: 5em;
+  font-weight: normal;
+}
+section.landing-clients h2{
+  position: relative;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 600;
+  font-size: 0.85em;
+  letter-spacing: 0.3em;
+  color: #444;
+}
+section.landing-clients h2:after{
+  position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    width: 75px;
+    height: 5px;
+    display: block;
+    content: "";
+    background: #b4d3d3;
+}
+section.landing-clients > div:first-child a{
+  margin-top: 1.5rem;
+  display: inline-block;
+  padding: 0.8rem 4rem;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+  font-size: 0.8em;
+  color: #FFF;
+  background: #b4d3d3;
+  border-radius: 5px;
+  transition: all 0.15s ease-in-out;
+}
+section.landing-clients > div:first-child a:hover{
+  background: #75ACAC;
+  text-decoration: none;
+  transition: all 0.15s ease-in-out;
+}
+section.landing-clients > div:last-child{
+  padding: 8.5rem 0 5rem;
+  flex-flow: column nowrap;
+}
+section.landing-clients > div:last-child figure{
+  height: 22rem;
+  width: 75%;
+  margin: 0;
+  background: #26262a;
+}
+section.landing-clients > div:last-child .figure-infobox{
+  width: 75%;
+  display: flex;
+  justify-content: space-between;
+  background: #EEE;
+}
+section.landing-clients > div:last-child .figure-infobox > div:first-child{
+  padding: 2.5rem 0 2.5rem 5rem;
+}
+section.landing-clients > div:last-child .figure-infobox h3{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 2em;
+}
+section.landing-clients > div:last-child .figure-infobox p{
+  margin: 0;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+  font-size: 0.8em;
+}
+section.landing-clients > div:last-child .figure-infobox .slider-arrows{
+  display: flex;
+  flex-flow: column;
+}
+section.landing-clients > div:last-child .figure-infobox .slider-arrows button{
+  min-height: 50%;
+  background: #FFF;
+  border: none;
+  color: #AAA;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+section.landing-clients > div:last-child .figure-infobox .slider-arrows button:hover{
+  color: #000;
+  transition: all 0.3s ease-in-out;
+}
+  section.landing-clients > div:last-child .figure-infobox .slider-arrows button:first-child{padding: 1.2rem 2rem 0}
+  section.landing-clients > div:last-child .figure-infobox .slider-arrows button:last-child{padding: 0 2rem 1.2rem}
+
+/* =============== OTHER BITS OF CODE =============== */
+/* =============== SLIDER MAIN CODE =============== */
+.profile-container,
+.slider-container{
+  position: relative;
+  display: grid;
+  height: 25rem;
+  width: 100%;
+  grid-template-columns: 20% 20% 20% 20%;
+  grid-template-rows: auto;
+  justify-content: center;
+}
+  .profile-container .item,
+  .slider-container .item{
+    position: relative;
+    height: 25rem;
+    background-size: cover;
+    cursor: pointer;
+    z-index: 200;
+  }
+    .profile-container figcaption,
+    .slider-container figcaption{
+      visibility: hidden;
+      opacity: 0;
+      height: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+      flex-flow: column;
+      text-align: center;
+      color: #FFF;
+      transition: all 0.15s ease-in-out;
+    }
+      .profile-container .item:hover figcaption,
+      .slider-container .item:hover figcaption{
+        visibility: visible;
+        opacity: 1;
+        background: rgba(0,0,0,0.7);
+        transition: 0.15s ease-in-out;
+      }
+    .profile-container h2,
+    .slider-container h2{
+      margin-bottom: 0.25rem !important;
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.7em;
+      font-weight: normal;
+    }
+    .profile-container h4,
+    .slider-container h4{
+      margin-bottom: 2rem;
+      font-family: 'Nunito', sans-serif;
+      font-weight: 700;
+      font-size: 0.8em;
+    }
+    .profile-container .item button,
+    .slider-container .item button{
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      color: #b4d3d3;
+      background: #b4d3d3;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+    }
+      .profile-container .item button:hover,
+      .slider-container .item button:hover{
+        color: #000;
+        background: #000;
+        transition: all 0.15s ease-in-out;
+      }
+      .profile-container .item button svg,
+      .slider-container .item button svg{
+        vertical-align: middle !important;
+      }
+    .slider-container .arrow-wrapper{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      width: 90%;
+      display: flex;
+      justify-content: space-between;
+      z-index: 1;
+    }
+      .slider-container .arrow-wrapper svg{
+        width: 30px;
+      }
+      .slider-container .arrow-wrapper a:hover{
+        text-decoration: none;
+      }
+
+/* =============== SLIDER DOTS FIGURE =============== */
+.slider-dots{
+  width: 100%;
+  padding: 15px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255,255,255,0.25);
+}
+  .slider-dots span{
+    display: block;
+    width: 7px;
+    height: 7px;
+    margin: 0 5px;
+    background: #CCC;
+    border-radius: 50px;
+    cursor: pointer;
+  }
+  .slider-dots span.active{
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    background: #FFF;
+    border-radius: 50px;
+  }
+
+/* =============== UTILITY CLASSES =============== */
+.clear{clear: both}
+.mobile-only{display: none;}
+.mirrored-x{transform: scale(-1,1);}
+
+  ul.inverted li a{color: #DADADA;}
+  .inverted{color: #DADADA;}
+  ul.inverted li a:hover{color: #FFF;}
+  .inverted:hover{color: #FFF;}
+  .site-nav .inverted li a:hover{border-bottom: 1px solid #FFF;}
+
+/* Buttons style */
+.btn-wrapper{
+  display: flex;
+  flex-wrap: nowrap;
+}
+.cyan-btn{
+  align-self: flex-end;
+  color: #FFF;
+  background: #b4d3d3;
+}
+  .cyan-btn:hover{
+    background: #87B0B0;
+    color: #FFF;
+    transition: 0.3s ease-in-out;
+  }
+.black-btn{
+  color: #000;
+  background: #FFF;
+}
+  .black-btn:hover{
+    color: #FFF;
+    background: #000;
+    transition: 0.3s ease-in-out;
+  }
+  .black-btn:hover img{
+    filter: invert(100%);
+    transition: 0.3s ease-in-out;
+  }
+.cyan-btn,
+.black-btn{
+  min-height: 6rem;
+  max-height: 6rem;
+  padding: 2rem;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+  font-size: 0.8em;
+  border: none;
+  transition: 0.3s ease-in-out;
+}
+  .cyan-btn:hover,
+  .black-btn:hover{
+    cursor: pointer;
+  }
+.trending-btn{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 10px 30px;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+  font-size: 0.8em;
+  letter-spacing: 2.5px;
+  background: #FFF;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+  .trending-btn:hover{
+    color: #FFF;
+    background: #000;
+    transition: 0.2s ease-in-out;
+  }
+
+/* =============== shut up bootstrap =============== */
+svg:not(:root){vertical-align: -.125em !important;}
+
+
+
+
+/* ============================ MEDIA QUERIES ============================ */
+@media only screen
+and (max-width:1180px){
+  ul.social-links,
+  nav.site-nav{
+    display: none;
+  }
+  header.global,
+  div.form-container{
+    top: 0;
+    margin: 2rem 2rem;
+  }
+
+  /* Main page */
+  section.landing-gallery{
+    margin-top: 5rem;
+    padding: 0 0.5rem 0 5%;
+  }
+  section.landing-gallery figure{
+    width: 100%;
+    background: url('../img/gallery-woman-model.jpg') no-repeat center left;
+    background-size: cover;
+  }
+  section.landing-gallery .gallery-triggers{
+    margin-bottom: 0;
+  }
+  section.profile .profile-container{
+    height: 26rem;
+    grid-template-columns: 50% 50%;
+  }
+  section.profile .profile-container .item{
+    height: 13rem;
+  }
+  section.profile figure.item:nth-child(n+5){
+    display: none;
+  }
+}
+
+@media only screen
+and (max-width:767px){
+  /* Global stuff */
+  header.global, div.form-container{
+    margin: 1.25rem 2rem;
+  }
+  footer.global{
+    padding: 0.75rem;
+  }
+  footer.global div:nth-child(1){
+    display: block;
+  }
+  footer.global hr{
+    margin: 0.25rem 0 1rem !important;
+  }
+  footer.global div:nth-child(3){
+    flex-flow: column-reverse;
+  }
+  footer.global div:nth-child(1) aside
+  {
+    display: none;
+  }
+  .trending-btn{
+    padding: 5px 15px;
+    letter-spacing: 1.5px;
+  }
+
+  .mobile-only{display: block;}
+
+  /* Main page */
+  section.landing-gallery{
+    height: 100vh;
+    margin-top: 0;
+    padding: 0;
+  }
+  section.landing-gallery figure{
+    background: #EEE;
+    justify-content: center;
+  }
+  section.landing-gallery figcaption{
+    transform: translateX(0);
+  }
+  section.landing-gallery h1{
+    font-size: 3.5em;
+  }
+  section.landing-gallery > button,
+  section.landing-gallery figure button.black-btn,
+  section.landing-gallery .gallery-triggers,
+  section.landing-gallery:after,
+  section.news main a:nth-child(4),
+  section.news main .slider-dots{
+    display: none;
+  }
+  section.profile{
+    padding: 0 0.75rem;
+  }
+  section.profile header button, section.about-slider header button{margin: 0px 12px}
+  .profile-container h2, .slider-container h2{font-size: 1.35em}
+  .profile-container h4, .slider-container h4{font-size: 0.75em}
+
+  section.profile .profile-container{
+    height: 30rem;
+    grid-template-columns: 50% 50%;
+  }
+  section.profile .profile-container .item{
+    height: 15rem;
+  }
+
+  section.news{
+    padding: 0.5rem 0.75rem 0;
+    display: flex;
+    flex-flow: column;
+  }
+
+  section.news > h2{
+    order: 1;
+    font-size: 1.7em;
+  }
+  section.news > h2:after{
+    margin: 9px auto;
+    width: 40%;
+  }
+  section.news header{
+    order: 3;
+    display: flex;
+    flex-flow: column;
+    padding: 0.5rem 0;
+  }
+  section.news header a{
+    width: 100%;
+    padding: 0.5rem 0;
+  }
+  section.news header article h3{font-size: 1.1em;}
+  section.news header article time{font-size: 0.8em;}
+  section.news header figure{
+    min-width: 100px;
+    max-width: 100px;
+    height: 85px;
+  }
+
+  section.news main{
+    order: 2;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+  }
+  section.news main a:nth-child(1){
+    margin-bottom: 15px;
+  }
+  section.news main a:nth-child(1) article{
+    margin: 0 0 15px;
+    min-height: 15rem;
+  }
+  section.news main a:nth-child(1) article aside{
+     padding: 15px 15px 10px;
+     background: #9BC1C1;
+  }
+  section.news main a:nth-child(1) article figure{background: url(../img/news-1.jpeg) no-repeat center/cover;}
+
+  section.news main a:nth-child(1) article aside > div{display: none;}
+  section.news main a:nth-child(1) article h3{font-size: 1.1em;}
+  section.news main a:nth-child(1) article time{font-size: 0.85em;}
+  section.news main a:nth-child(n+2) h3{font-size: 1.1em;}
+  section.news main a:nth-child(n+2) time{font-size: 0.85em;}
+
+  section.news main a:nth-child(n+2){width: 48%;}
+  section.news main a:nth-child(n+2) article{height: auto;}
+  section.news main a:nth-child(n+2) article figure{height: 80px;}
+}
+
+@media only screen
+and (orientation:landscape){
+
+  section.news main a:nth-child(1) article h3{font-size: 1.6em;}
+  section.news main a:nth-child(1) article time{font-size: 1.1em;}
+  section.news main a:nth-child(n+2) h3{font-size: 1.2em;}
+  section.news main a:nth-child(n+2) time{font-size: 1em;}
+}
